@@ -1,0 +1,17 @@
+{
+  "name": "Push Notifications IBM web extension",
+  "description": "Bluemix Push Notifications Example Chrome app.",
+  "manifest_version": 3,
+  "version": "0.0.1",
+  "background": {
+    "persistent": false,
+    "scripts": ["BMSPushSDK.js","loader.js","background.js"]
+  },
+  "browser_action": {
+    "default_title": "Bluemix Example",
+    "default_icon": "icon-128.png",
+    "default_popup": "window.html"
+  },
+  "permissions": ["gcm", "storage", "notifications","*://*.bluemix.net/*"],
+  "icons": { "128": "icon-128.png" }
+}
